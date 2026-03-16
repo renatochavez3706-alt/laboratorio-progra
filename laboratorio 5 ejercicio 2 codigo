@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main(){
+float lab1, lab2, lab3, labfinal, examen, proyecto, promedio, examen_nota, lab_nota, proyecto_nota;
+printf("--- Sistema de Calificaciones Ponderado ---\n");
+printf("ingrese la nota del laboratorio 1:\n");
+scanf("%f", &lab1);
+printf("ingrese la nota del laboratorio 2:\n");
+scanf("%f", &lab2);
+printf("ingrese la nota del laboratorio 3:\n");
+scanf("%f", &lab3);
+printf("ingrese la nota del examen teorico:\n");
+scanf("%f", &examen);
+printf("ingrese la nota del proyecto final:\n");
+scanf("%f", &proyecto);
+if(lab1>=0 && lab2>=0 && lab3>=0 && examen>=0 && proyecto>=0 && lab1<=100 && lab2<=100 && lab3<=100 && examen>=0 && proyecto<=100){
+    printf("promedio calculado:\n");
+    printf("----------------------\n");
+    printf("nota de laboratorio 1 ingresada: %.2f\n", lab1);
+     printf("nota de laboratorio 2 ingresada: %.2f\n", lab2);
+      printf("nota de laboratorio 3 ingresada: %.2f\n", lab3);
+    printf("nota de examen ingresada: %.2f\n", examen);
+     printf("nota de proyecto final ingresada: %.2f\n", proyecto);
+    printf("----------------------\n");
+    labfinal=lab1*0.15 + lab2*0.15 + lab3*0.15;
+    examen_nota=examen*0.35;
+    proyecto_nota= proyecto*0.2;
+    promedio=labfinal + examen_nota + proyecto_nota;
+    if(promedio>=51){
+         printf("el promedio final es: %.2f APROBADO\n", promedio);
+    }else{
+        printf("el promedio final es: %.2f REPROBADO\n", promedio);
+    }
+
+}else{printf("----------------------\n");
+       printf("ERROR: LAS NOTAS DEBEN SER MAYOR IGUAL A 0 Y MENOR IGUAL A 100\n");
+       printf("----------------------");
+       }
+}
