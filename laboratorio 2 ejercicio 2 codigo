@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+float numero1, numero2, numero3, numero4, suma, resta, dividir, multiplicar, sumatotal;
+printf("ingrese el primer numero: ");
+scanf("%f", &numero1);
+printf("ingrese el segundo numero: ");
+scanf("%f", &numero2);
+printf("ingrese el tercer numero: ");
+scanf("%f", &numero3);
+printf("ingrese el cuarto numero: ");
+scanf("%f", &numero4);
+suma= numero1 + numero2 + numero3 + numero4;
+resta=numero1 - numero2 - numero3 - numero4;
+multiplicar= numero1 * numero2 * numero3 * numero4;
+dividir=numero1/numero2/numero3/numero4;
+sumatotal= suma + resta + dividir + multiplicar;
+printf("la suma es: %.2f\n", suma);
+printf("la resta es: %.2f\n", resta);
+printf("la division es: %.2f\n", dividir);
+printf("la multiplicacion es: %.2f\n", multiplicar);
+printf("la suma total es: %.2f\n", sumatotal);
+return 0;
+}
