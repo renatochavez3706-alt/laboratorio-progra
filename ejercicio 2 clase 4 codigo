@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+char nombre[50];
+float cantidad_de_productos, total_a_pagar, precio;
+printf("ingrese el nombre del cliente: ");
+scanf("%s", nombre);
+printf("ingrese la cantidad de productos: ");
+scanf("%f", &cantidad_de_productos);
+printf("ingrese el precio del producto: ");
+scanf("%f", precio);
+total_a_pagar=cantidad_de_productos*precio;
+printf("los resultados son: \n");
+printf("precio: %.2f\n", precio);
+printf("total a pagar; %.2f\n", total_a_pagar);
+return 0;
+}
