@@ -1,0 +1,30 @@
+#include<math.h>
+#include<stdio.h>
+int main(){
+float radio, altura, area_lateral, volumen, suma;
+const float PI=3.1416;
+printf("--- CALCULO DE GEOMETRIA DEL CILINDRO ---\n");
+
+printf("ingrese el valor del radio (r):\n");
+scanf("%f", &radio);
+printf("ingrese el valor de la altura (h):\n");
+scanf("%f", &altura);
+if (radio>0 && altura>0){
+    printf("Resultados calculados:\n");
+    printf("----------------------\n");
+    printf("Radio ingresado: %.2f\n", radio);
+    printf("Altura ingresada: %.2f\n", altura);
+    printf("----------------------\n");
+    area_lateral=2*PI*radio*altura;
+    printf("Area Lateral: %.4f unidades cuadradas\n", area_lateral);
+    volumen= PI* pow(radio, 2)*altura;
+    printf("Volumen: %.4f unidades cubicas\n", volumen);
+    printf("----------------------\n");
+     suma= area_lateral+volumen;
+     printf("suma de area y volumen: %.4f\n", suma);
+   }else {
+       printf("----------------------\n");
+       printf("ERROR: RADIO Y ALTURA TIENE QUE SER MAYOR A 0\n");
+       printf("----------------------");
+   }
+}
