@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+float dia1, dia2, dia3, dia4, dia5, dia6, dia7, ingreso_semanal;
+printf("ingrese la ganancia del primer dia: ");
+scanf("%f", &dia1);
+printf("ingrese la ganancia del segundo dia: ");
+scanf("%f", &dia2);
+printf("ingrese la ganancia del tercer dia: ");
+scanf("%f", &dia3);
+printf("ingrese la ganancia del  cuarto dia: ");
+scanf("%f", &dia4);
+printf("ingrese la ganancia del  quinto dia: ");
+scanf("%f", &dia5);
+printf("ingrese la ganancia del sexto dia: ");
+scanf("%f", &dia6);
+printf("ingrese la ganancia del  septimo dia: ");
+scanf("%f", &dia7);
+ingreso_semanal= dia1 + dia2 + dia3 + dia4 + dia5 + dia6 + dia7;
+printf("el ingreso semanal es: %.2f\n", ingreso_semanal);
+return 0;
+}
