@@ -1,0 +1,12 @@
+Algoritno ingresototal
+Definir nombre Como Caracter
+Definir Horas, Pago_por hora, resultado Como Real
+Escribir "Ingrese el nombre del trabajador"
+Leer nombre
+Escribir "Ingrese las horas trabañadas:»
+Leer Horas
+Escribir "Ingrese el pago por hora"
+Leer Pago_por_hora
+resultado <- Horas * Pago_por_hora
+Escribir "El ingreso total es:", resultado
+FinAlgoritno
