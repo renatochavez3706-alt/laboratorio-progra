@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+float dias, horas_trabajadas, pago_por_hora, resultado, ingreso_total;
+char nombre[50];
+
+printf("ingrese el nombre del trabajador: ");
+scanf("%s", nombre);
+printf("ingrese las horas trabajadas: ");
+scanf("%f", &horas_trabajadas);
+printf("ingrese el pago por hora: ");
+scanf("%f", &pago_por_hora);
+printf("ingrese la cantidad de dias trabajados: ");
+scanf("%f", &dias);
+resultado=horas_trabajadas*pago_por_hora;
+ingreso_total=dias*resultado;
+printf("el ingreso total: %.2f\n", ingreso_total);
+return 0;
+}
