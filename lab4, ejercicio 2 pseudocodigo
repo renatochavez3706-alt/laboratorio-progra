@@ -1,0 +1,14 @@
+Algoritno Tienda
+Definir nombre Como Caracter
+Definir cantidad de productos, total_a_pagar, precio Como Real
+Escribir "ingrese el nombre del cliente"
+Leer nombre
+Escribir "ingrese la cantidad de productos"
+Leer cantidad_de produetos
+Escribir "ingrese el precio"
+Leer precio
+total_a_pagar‹- cantidad de productos * precio
+Escribir "los resultado son:"
+Escribir "precio:", precio
+Escribir "total a pagar:", total a_pagar
+FinAlgoritmo
