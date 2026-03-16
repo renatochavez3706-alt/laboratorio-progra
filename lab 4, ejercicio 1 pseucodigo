@@ -12,6 +12,6 @@ Algoritmo DatosEstudiante
 	Escribir "los datos son:"
 	Escribir "Nombre del estudiante:", nombre
 	Escribir "edad del estudiante:", edad
-	Escribir "carrera del estudiante:", cantera
+	Escribir "carrera del estudiante:", carrera
 	Escribir "semestre del estudiante:", semestre
 FinAlgoritmo
