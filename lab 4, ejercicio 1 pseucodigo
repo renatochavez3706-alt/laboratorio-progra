@@ -1,0 +1,17 @@
+Algoritmo DatosEstudiante
+	Definir nombre, carrera Como Caracter
+	Definir edad, semestre Como Real
+	Escribir "ingrese el nombre del estudiante"
+	Leer nombre
+	Escribir "ingrese la edad del estudiante"
+	Leer edad
+	Escribir "ingrese la carrera del estudiante"
+	Leer carrera
+	Escribir "ingrese el semestre del estudiante"
+	Leer semestre
+	Escribir "los datos son:"
+	Escribir "Nombre del estudiante:", nombre
+	Escribir "edad del estudiante:", edad
+	Escribir "carrera del estudiante:", cantera
+	Escribir "semestre del estudiante:", semestre
+FinAlgoritmo
