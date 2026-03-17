@@ -1,12 +1,12 @@
 Algoritmo Area
 Definir base Como Real
 Definir altura Como Real
-Definir Area _del_triangulo Como Real
+Definir Area_del_triangulo Como Real
 Escribir "ingrese base del triangulo"
 Leer base
 Escribir "ingrese la altura del triangulo"
 Leer altura
-Area_del_triangulo‹- (base * altura) / 2
+Area_del_triangulo ‹- (base * altura) / 2
 Escribir "el resultado es:"
-Escribir "area:", Area del_ triangulo
+Escribir "area:", Area_del_ triangulo
 FinAlgoritmo
