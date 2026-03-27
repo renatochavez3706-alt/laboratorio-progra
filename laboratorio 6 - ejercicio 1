@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int opcion, numero1, numero2, suma, resta, multiplicacion, division;
+    cout <<"ingrese el primer numero: "<<endl;
+    cin>>numero1;
+    cout <<"ingrese el segundo numero: "<<endl;
+    cin>>numero2;
+    cout <<"seleccione una operacion: "<<endl;
+    cout <<"1. Suma"<<endl;
+    cout <<"2. Resta"<<endl;
+    cout <<"3. Multiplicacion"<<endl;
+    cout <<"4. Division"<<endl;
+    cout <<"Ingrese opcion: "<<endl;
+    cin>>opcion;
+    switch(opcion){
+    case 1:
+        suma=numero1+numero2;
+        cout << "la suma es: "<<suma<<endl;
+        break;
+    case 2:
+        resta=numero1-numero2;
+        cout << "la resta es: "<<resta<<endl;
+        break;
+    case 3:
+        multiplicacion=numero1*numero2;
+        cout << "la multiplicacion es: "<<multiplicacion<<endl;
+        break;
+    case 4:
+        if(numero2==0){
+        cout<<"error al dividir entre 0"<<endl;
+        break;
+        }else{
+          division=numero1/numero2;
+        cout << "la division es: "<<division<<endl;
+        break;
+        }
+        default:
+        cout<<"ERROR"<<endl;
+    }
+    return 0;
+}
