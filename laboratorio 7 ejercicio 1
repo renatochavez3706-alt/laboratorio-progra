@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+int n, a=0, b=1, c, d=1;
+double suma=0;
+cin>>n;
+for(int i=1; i<=n;i++){
+    suma=suma+(double)a/d;
+    cout<<a<<"/"<<d;
+    if(i<n){
+        cout<<"+";
+    }
+    c=a+b;
+    a=b;
+    b=c;
+    d=d+2;
+}
+cout<<endl;
+cout<<"suma= "<<suma<<endl;
+return 0;
+}
