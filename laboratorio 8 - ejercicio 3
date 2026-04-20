@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int clave, intentos=0;
+	int digito, anterior, aux, cantidad, valido;
+	do{
+		cout<<"ingrese la clave: "<<endl;
+		cin>>clave;
+		intentos=intentos+1;
+		aux=clave;
+		cantidad=0;
+		valido=1;
+		while(aux>0){
+			cantidad=cantidad+1;
+			aux=aux/10;
+		}
+		if(cantidad!=4){
+			valido=0;
+		}else{
+			aux=clave;
+			anterior=aux%10;
+			aux=aux/10;
+			while(aux>0){
+				digito=aux%10;
+				if(digito==anterior){
+					valido=0;
+				}
+				anterior=digito;
+				aux=aux/10;
+			}
+		}
+		if(valido==1){
+			cout<<"PIN valido"<<endl;
+			break;
+		}else{
+			cout<<"PIN invalido"<<endl;
+		}
+	}while(intentos<3);
+	if(valido==0 && intentos==3){
+		cout<<"Cuenta bloqueada"<<endl;
+	}
+return 0;
+}
