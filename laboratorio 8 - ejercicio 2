@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+int consumo, menor, digitos, mayor,cantidad_digitos=0,dias=5;
+do{
+cout<<"ingrese la cantidad de consumo: "<<endl;
+cin>>consumo;
+}while(consumo<=0);
+    mayor=consumo%10;
+    menor=consumo%10;
+while(consumo>0){
+  digitos=consumo%10;
+  dias=dias-1;
+    cout<<"dia"<<dias<<":"<<digitos<<"GB"<<endl;
+    if(digitos>mayor){
+        mayor=digitos;
+    }if(digitos<menor){
+    menor=digitos;
+    }
+    consumo=consumo/10;
+}
+cout<<"consumo mayor: "<<mayor<<endl;
+cout<<"consumo menor: "<<menor<<endl;
+return 0;
+
+}
