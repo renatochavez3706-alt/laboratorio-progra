@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+int horas, mayor5=0, total=0, promedio, digitos, aplicacion=5,cantidad_digitos=0;
+do{
+cout<<"ingrese la cantidad de horas: "<<endl;
+cin>>horas;
+}while(horas<=0);
+while(horas>0){
+    digitos=horas%10;
+    total=total+digitos;
+    aplicacion=aplicacion-1;
+    cout<<"aplicacion"<<aplicacion<<":"<<digitos<<"horas"<<endl;
+    if(digitos>5){
+        mayor5=mayor5+1;
+    }
+    cantidad_digitos=cantidad_digitos+1;
+    horas=horas/10;
+}
+promedio=total/cantidad_digitos;
+cout<<"horas mayor a 5: "<<mayor5<<endl;
+cout<<"total de horas: "<<total<<endl;
+cout<<"promedio de horas: "<<promedio<<endl;
+return 0;
+
+}
