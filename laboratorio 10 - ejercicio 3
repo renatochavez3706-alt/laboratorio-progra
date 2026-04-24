@@ -1,0 +1,30 @@
+#include<iostream>
+#include<iomanip>
+int contarpares(int n);
+using namespace std;
+int main(){
+int N,cantidad;
+do{
+        cout<<"ingrese un numero entero positivo"<<endl;
+    cin>>N;
+if(N<=0){
+    cout<<"ingrese un numero entero positivo"<<endl;
+    cin>>N;
+}
+}while(N<=0);
+cantidad=contarpares(N);
+cout<<fixed<<setprecision(0);
+cout<<"cantidad de pares: "<<cantidad<<endl;
+return 0;
+}
+int contarpares(int n){
+int digitos, cantidad=0;
+while(n>=0){
+    digitos=n%10;
+    if(digitos%2==0){
+        cantidad=cantidad+1;
+    }
+    n=n/10;
+}
+return cantidad;
+}
