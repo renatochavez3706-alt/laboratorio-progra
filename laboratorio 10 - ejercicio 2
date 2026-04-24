@@ -1,0 +1,23 @@
+#include<iostream>
+#include<iomanip>
+float promedionotas(int N);
+using namespace std;
+int main(){
+int N;
+float promedio;
+cout<<"ingrese la cantidad de calificaciones: "<<endl;
+cin>>N;
+promedio=promedionotas(N);
+cout<<fixed<<setprecision(2);
+cout<<"el promedio es: "<<promedio<<endl;
+return 0;
+}
+float promedionotas(int N){
+float nota, suma=0;
+for(int i=1; i<=N;i++){
+        cout<<"ingrese la calificacion "<<i<<":";
+        cin>>nota;
+        suma=suma+nota;
+}
+return suma/N;
+}
